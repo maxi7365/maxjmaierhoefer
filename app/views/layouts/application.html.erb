@@ -6,22 +6,29 @@
 
     <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'default', 'data-turbolinks-track': 'reload' %>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
   </head>
 
-  <body>
-  <nav>
-  <ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Contact</li>
-  </ul>
-</nav>
+<body>
+  <div class="nav">
+    <ul class="nav" id="nav">
+       <li><a href="application.html.erb">Home</a></li>
+       <li><a href="contact.html">Contact Me</a></li>
+       <li><a href="about.html">About</a></li>
+      
+    </ul>
+    </div>
 
-<%= yield %>
+  <%= yield %>
 
-<footer>
-  &copy; 2015 Bike Berlin
-</footer>
-  <!--  <%= yield %>-->
-  </body>
+  <footer>
+    &copy; 2015 Bike Berlin
+  </footer>
+  
+</body>
 </html>

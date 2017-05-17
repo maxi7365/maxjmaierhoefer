@@ -12,4 +12,11 @@
  *
  *= require_tree .
  *= require_self
+
+
  */
+.nav {
+	color: white;
+	background-color: gray;
+}
+<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
